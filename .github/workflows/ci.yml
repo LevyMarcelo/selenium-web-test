@@ -25,7 +25,7 @@ jobs:
           gradle-version: '8.3'
 
       - name: Run Selenium tests
-        run: gradle test -Psuite=headless_test
+        run: gradle test -Psuite=headless_test --stacktrace --info
 
       - name: Upload test reports
         if: always()
